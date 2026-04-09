@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Containers -->
+  <div class="container bg-primary">
+    <h6>normal</h6> //576 kella irutha full width eduthukum
+  </div>
+  <br>
+  <div class="container-sm bg-secondary">
+    <h6>sm</h6> //576 kella irutha full width eduthukum
+  </div>
+  <br>
+  <div class="container-md bg-success">
+    <h6>md</h6> //768 kella irutha full width eduthukkum
+  </div>
+  <br>
+  <div class="container-lg bg-danger">
+    <h6>lg</h6> //992 kella vantha full width eduthukkum
+  </div>
+  <br>
+  <div class="container-xl bg-info">
+    <h6>xl</h6> // 1200 kella vantha full width eduthukkum
+  </div>
+  <br>
+  <div class="container-xxl bg-warning">
+    <h6>
+      xxl //1400 kella vantha full width eduthukkum
+    </h6>
+  </div>
+  <br>
+  <div class="container-fluid bg-dark">
+    <h6>fluid</h6> // always full width eduthukkum
+  </div>
+  <!-- ------------------------------------------------------------------------------------- -->
+
+  <br>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand">#SKshop</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <div class="container-fluid p- bg-success">
+    <div class="d-flex justify-content-between align-items-center mx-5">
+
+      <a>this is demo line</a>
+
+      <div class="d-flex flex-row align-items-center gap-3">
+
+        <a>home</a>
+
+        <span> | </span>
+
+        <a>help center</a>
+
+        <span> | </span>
+
+        <div class="dropdown open">
+          <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown Button
+          </button>
+          <div class="dropdown-menu" aria-labelledby="triggerId">
+            <button class="dropdown-item" href="#">Action</button>
+            <button class="dropdown-item disabled" href="#">
+              Disabled action
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+
+
+  <!-- row & column -->
+  <div class="container">
+    <div class="row">
+      <div class="col">column1</div>
+      <div class="col">column2</div> <!--  Auto-layout Column-->
+      <div class="col">column3</div> <!--  naama just "col" mattu kudutha enthana columns kuduthalum equal ah space eduthukum -->
+      <div class="col">column4</div>
+      <div class="col">column5</div>
+      <div class="col">column6</div>
+      <div class="col">column8</div>
+    </div>
+  </div>
+
+<br>
+
+  <!-- responsive columns -->
+  <div class="container">
+    <div class="row">
+      <div class=" col-sm-12 col-md-6 col-lg-4 bg-success">column1</div>
+     <div class="col-sm-12 col-md-6 col-lg-4 bg-danger">column2</div>  <!-- ethula col-md-6 or lg o snyone kudutha antha 
+      screen size la eppidi iruko athe maari screen size increase panna appidiye tha iruku fixed example md-6 nu kudutha
+      lg screen vara apo 2 columns tha use panna mudium -->
+      <div class="col-sm-12 col-md-6  bg-primary">column2</div>
+    </div>
+  </div>
+
+<br>
+
+  <!-- inner columns -->
+   <div class="container">
+    <div class="row">
+      <div class="col-6 bg-secondary">
+        sample-1
+        <div class="row">
+          <div class="col-6 bg-danger">
+            sample 1.1
+          </div>
+          <div class="col-6 bg-info"> sample 1.2</div>
+          <div class="col-6 bg-primary"> sample 1.3</div>
+        </div>
+      </div>
+      <div class="col-6 bg-warning ">
+        sample-2
+        <div class="row justify-content-between">
+          <div class="col-4 bg-danger">sample 2.1</div> 
+          <div class="col-4 bg-danger">sample 2.2</div> 
+        </div>
+        
+      </div>
+    </div>
+   </div>
+
+<br>
+   <!-- card -->
+
+   <div class="card border border-primary">    
+    <div class="card-body">
+      <h3 class="card-title">Heading</h3>
+      <p class="card-text">Basic sample of the card</p>
+      <a class="btn btn-success" href="#">Click</a>
+    </div>
+   </div>
+
+<br>
+   <!-- card with image -->
+
+   <div class="card bg-secondary" style="width: 18rem;">
+    <img src="assets/img/sample.jpeg" class="card-img-top">
+    <div class="card-body">
+      <h3 class="card-title">Title</h3>
+      <p class="card-text">Sample image with card</p>
+      <a class="btn btn-danger" href="#">Click</a>
+    </div>
+   </div>
+
+   <br>
+
+   <!-- card with header and footer -->
+    <div class="card" style="width: 18rem;">
+      <div class="card-header bg-info">
+        Card Hader section
+      </div>
+      <div class="card-body">
+        <h3 class="card-title"> title</h3>
+        <p>sample card with header and footer</p>
+        <a class="btn btn-primary" href="#">Click</a>
+      </div>
+      <div class="card-footer bg-dark text-white">Card footer section</div>
+    </div>
+
+<br>
+
+
+<!-- card with image, header, footer -->
+ <div class="card" style="width: 18rem;">
+  <div class="card-header bg-warning">
+    card header
+  </div>
+  <img src="assets/img/sample.jpeg" class="card-img-top">
+  <div class="card-body">
+    <h3 class="card-title">sample title</h3>
+    <p class="card-text">Sample card with image, header, footer</p>
+    <button type="button" class="btn btn-success">Click</button>
+  </div>
+  <div class="card-footer bg-dark text-white">card footer</div>
+ </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
